@@ -1,0 +1,19 @@
+paper = 0
+money = int(input())
+while money != 0:
+    if money >= 100:
+        paper += 1
+        money -= 100
+    elif money < 100 and money >= 50:
+        paper += 1
+        money -= 50
+    elif money < 100 and money < 50 and money >= 10:
+        paper += 1
+        money -= 10
+    elif money < 100 and money < 50 and money < 10 and money >= 5:
+        paper += 1
+        money -= 5
+    elif money < 100 and money < 50 and money < 10 and money < 5 and money >= 1:
+        paper += 1
+        money -= 1
+print(paper)
